@@ -6,4 +6,4 @@ to color the characters.
 # Resolution
 
 The resolution of the ouput is 1x0.5 characters. This is possible because of the half vertical
-characters that can be used along with foreground and background characters.
+characters that can be used along with foreground and background colors.
