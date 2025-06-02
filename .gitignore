@@ -1,0 +1,6 @@
+# ignore swap from vim
+*.swp
+
+# ignore obj and bin (builds)
+obj/
+bin/
