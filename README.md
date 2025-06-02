@@ -1,6 +1,6 @@
 # Terminal Renderer
 
-`terminal-renderer` is a 3D renderer that outputs to an ordinary terminal. It uses ANSI escape codes
+`terminal-renderer` is an image renderer that outputs to an ordinary terminal. It uses ANSI escape codes
 to color the characters.
 
 # Resolution
