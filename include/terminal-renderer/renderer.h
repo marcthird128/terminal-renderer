@@ -24,8 +24,14 @@ typedef struct RenderString {
 
 typedef int /* returns size of generated color */ (*ColorGeneratorFn)(uint8_t* /*input*/, char* /*outputBuffer*/, int /*maxSize*/);
 
-int /* returns 1 if failed */ ImageBuffer_render(ImageBuffer* self, RenderString* str, ColorGeneratorFn colorFn);
+/* returns 0 if success, 1 otherwise */
+int ImageBuffer_init(ImageBuffer* self, int width, int height, int bytesPerPixel);
+int ImageBuffer_free(ImageBuffer* self);
+int ImageBuffer_render(ImageBuffer* self, RenderString* str, ColorGeneratorFn colorFn);
 
-int /* returns 1 if failed */ RenderString_append(RenderString* self, const char* str, int size);
+/* returns 0 if success, 1 otherwise */
+int RenderString_init(RenderString* self, size_t sizeHint);
+int RenderString_free(RenderString* self);
+int RenderString_append(RenderString* self, const char* str, int size);
 
 #endif
